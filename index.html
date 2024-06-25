@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial  , sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(156, 127, 127, 0.653);
+        margin: 0;
+        padding: 20px;
+    }
+    #cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .cards{
+        background-color: #fff;
+        border: 2px solid black;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.546);
+        width: 300px;
+        padding: 20px;
+        transition: transform 0.2s;
+    }
+    .cards:hover{
+        transform: scale(1.05);
+    }
+    .cards img{
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    .cards h2{
+        margin-top: 15px;
+        font-size: 1rem;
+    }
+    .cards p{
+        color: #545252;
+        margin-top: 3px;
+    }
+    
+    .cards .price,
+    .cards .brand{
+        font-size: 1rem;
+        color: #757373;
+        margin-top: 10px;
+    }
+
+</style>
+<body>
+    <div id="cards"></div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
